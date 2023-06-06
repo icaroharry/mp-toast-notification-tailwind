@@ -8,12 +8,12 @@ module.exports = {
         sans: ["DM Sans", "sans-serif"],
       },
       animation: {
-        notification: "notification 0.3s cubic-bezier(0.4, 0, 0.2, 1) 0s",
+        notification: "notification-enter 0.2s linear",
       },
       keyframes: {
-        notification: {
-          "0%": { transform: "translateX(1000px)", opacity: 0 },
-          "100%": { transform: "translateX(0px)", opacity: 1 },
+        "notification-enter": {
+          "0%": { transform: "translateX(18rem)", opacity: 0 },
+          "100%": { transform: "translateX(0rem)", opacity: 100 },
         },
       },
     },

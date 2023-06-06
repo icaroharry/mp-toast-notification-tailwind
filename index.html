@@ -8,5 +8,45 @@
     <link rel="stylesheet" href="dist/output.css" />
     <link rel="stylesheet" href="css/fonts.css" />
     <script src="src/index.js"></script>
+    <body
+      class="flex items-center justify-center w-screen h-screen overflow-hidden bg-gray-800"
+    >
+      <section
+        id="notifications-section"
+        class="absolute top-0 right-0 p-4"
+      ></section>
+
+      <button class="p-4 font-semibold text-gray-800 bg-green-300 rounded-full">
+        Mostrar Notificação
+      </button>
+    </body>
+
+    <template id="notification">
+      <dialog
+        open
+        class="relative flex items-center gap-4 p-0 mt-0 overflow-hidden text-gray-200 transition-all duration-700 bg-gray-900 shadow-lg opacity-0 open:p-4 open:mt-4 w-80 rounded-3xl open:translate-x-0 translate-x-72 open:max-h-20 max-h-0 open:opacity-100 animate-notification"
+      >
+        <section class="flex items-center gap-4">
+          <div class="bg-gray-800 rounded-full">
+            <img
+              src="https://i.pravatar.cc/56"
+              alt="Avatar do usuário"
+              class="rounded-full w-14 h-14"
+            />
+          </div>
+          <div class="w-32">
+            <h3 class="font-semibold">John Doe</h3>
+            <p class="overflow-hidden text-sm text-ellipsis line-clamp-1">
+              Lorem ipsum as dasda sdas dasdasasdasdas dasdas
+              das123123123asdasd123
+            </p>
+          </div>
+        </section>
+        <div class="bg-gray-700 w-[1px] h-16"></div>
+        <form method="dialog">
+          <button class="text-lg font-semibold text-green-300">Close</button>
+        </form>
+      </dialog>
+    </template>
   </head>
 </html>
